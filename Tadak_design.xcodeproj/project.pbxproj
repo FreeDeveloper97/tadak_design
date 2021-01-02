@@ -14,6 +14,7 @@
 		93E72FDD259D715800109C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E72FDB259D715800109C9E /* Main.storyboard */; };
 		93E72FDF259D715900109C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E72FDE259D715900109C9E /* Assets.xcassets */; };
 		93E72FE2259D715900109C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E72FE0259D715900109C9E /* LaunchScreen.storyboard */; };
+		93F1228F25A0C3DD001F63A8 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1228E25A0C3DD001F63A8 /* MyCustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		93E72FDE259D715900109C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E72FE1259D715900109C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93E72FE3259D715900109C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F1228E25A0C3DD001F63A8 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				93E72FDB259D715800109C9E /* Main.storyboard */,
 				9386A027259EBC49009F79AE /* RoundButton.swift */,
+				93F1228E25A0C3DD001F63A8 /* MyCustomView.swift */,
 				93E72FD5259D715800109C9E /* AppDelegate.swift */,
 				93E72FD7259D715800109C9E /* SceneDelegate.swift */,
 				93E72FD9259D715800109C9E /* ViewController.swift */,
@@ -142,6 +145,7 @@
 			files = (
 				9386A028259EBC49009F79AE /* RoundButton.swift in Sources */,
 				93E72FDA259D715800109C9E /* ViewController.swift in Sources */,
+				93F1228F25A0C3DD001F63A8 /* MyCustomView.swift in Sources */,
 				93E72FD6259D715800109C9E /* AppDelegate.swift in Sources */,
 				93E72FD8259D715800109C9E /* SceneDelegate.swift in Sources */,
 			);
