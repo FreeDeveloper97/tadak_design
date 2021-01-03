@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jIJ-YF-nBB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecw-y4-kLQ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,6 +108,9 @@
                                         <state key="normal" title="한글대전" backgroundImage="home_button">
                                             <color key="titleColor" name="blue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Button_korea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4A-dG-cgi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -148,12 +151,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="87"/>
+            <point key="canvasLocation" x="3003.0769230769229" y="86.729857819905206"/>
         </scene>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="Lb3-iB-xgB">
             <objects>
-                <viewController id="Zd6-yR-AVt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectViewController" id="Zd6-yR-AVt" customClass="SelectViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwv-Qw-4Oy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,6 +246,9 @@
                                 <state key="normal" title="아무노래" backgroundImage="select_button">
                                     <color key="titleColor" name="blue"/>
                                 </state>
+                                <connections>
+                                    <action selector="Button_SampleGame:" destination="Zd6-yR-AVt" eventType="touchUpInside" id="ki7-xU-M5H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tN-iH-DL4">
                                 <rect key="frame" x="40" y="516.66666666666663" width="310" height="80"/>
@@ -298,12 +304,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zol-di-aHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2757.5999999999999" y="86.806596701649184"/>
+            <point key="canvasLocation" x="3686.1538461538462" y="86.729857819905206"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="VCV-yx-AYa">
             <objects>
-                <viewController id="icd-YR-Ee1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="icd-YR-Ee1" customClass="GameViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hX-PQ-XTM">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -412,6 +418,16 @@
                                     <constraint firstItem="Mct-Uq-EAB" firstAttribute="centerX" secondItem="Q0y-uz-Z6n" secondAttribute="centerX" id="oSh-Nz-GrA"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZu-5m-gGI">
+                                <rect key="frame" x="145" y="720" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="01U-H8-ool"/>
+                                    <constraint firstAttribute="height" constant="100" id="tbp-RH-5gS"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="Button_Result:" destination="icd-YR-Ee1" eventType="touchUpInside" id="SyP-OU-FwZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NLX-LJ-yfZ"/>
                         <color key="backgroundColor" name="background"/>
@@ -421,6 +437,8 @@
                             <constraint firstItem="zSg-qd-GBr" firstAttribute="centerX" secondItem="4hX-PQ-XTM" secondAttribute="centerX" id="KZG-C4-GeN"/>
                             <constraint firstItem="yUt-CR-wTJ" firstAttribute="top" secondItem="4hX-PQ-XTM" secondAttribute="top" constant="-8" id="Lxk-6i-1yg"/>
                             <constraint firstItem="yUt-CR-wTJ" firstAttribute="leading" secondItem="4hX-PQ-XTM" secondAttribute="leading" constant="-22" id="RpU-df-Yc2"/>
+                            <constraint firstItem="EZu-5m-gGI" firstAttribute="bottom" secondItem="NLX-LJ-yfZ" secondAttribute="bottom" constant="10" id="VdZ-mv-buu"/>
+                            <constraint firstItem="EZu-5m-gGI" firstAttribute="centerX" secondItem="4hX-PQ-XTM" secondAttribute="centerX" id="bel-BU-4z6"/>
                             <constraint firstItem="yUt-CR-wTJ" firstAttribute="centerX" secondItem="4hX-PQ-XTM" secondAttribute="centerX" id="h37-eK-Buc"/>
                             <constraint firstItem="c99-QK-5Vo" firstAttribute="centerX" secondItem="4hX-PQ-XTM" secondAttribute="centerX" id="uMl-td-oZh"/>
                             <constraint firstItem="c99-QK-5Vo" firstAttribute="top" secondItem="zSg-qd-GBr" secondAttribute="bottom" constant="27" id="ucE-Gz-UoP"/>
@@ -432,12 +450,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ulp-rs-fmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461" y="86"/>
+            <point key="canvasLocation" x="4389.2307692307695" y="85.308056872037909"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="2Sw-B8-kdL">
             <objects>
-                <viewController id="cTM-da-9pa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="cTM-da-9pa" customClass="ResultViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vv5-hL-gKu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,6 +560,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Button_Score:" destination="cTM-da-9pa" eventType="touchUpInside" id="kfW-pI-Heu"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLK-41-Abz" customClass="MyCustomView" customModule="Tadak_design" customModuleProvider="target">
                                 <rect key="frame" x="30" y="260" width="330" height="402"/>
@@ -599,12 +620,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyc-Nq-nje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4142" y="87"/>
+            <point key="canvasLocation" x="5070.7692307692305" y="86.729857819905206"/>
         </scene>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="Yf6-Mu-Mmy">
             <objects>
-                <viewController id="QBM-0p-POh" sceneMemberID="viewController">
+                <viewController id="QBM-0p-POh" customClass="StartViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hAa-lp-pkw">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -637,6 +658,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Button_Start:" destination="QBM-0p-POh" eventType="touchUpInside" id="ikC-iJ-EXH"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타자게임" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyM-ve-yUO">
                                         <rect key="frame" x="60" y="243.00000000000003" width="70" height="23.999999999999972"/>
@@ -689,15 +713,16 @@
                             <constraint firstItem="nmM-8s-UH5" firstAttribute="centerX" secondItem="hAa-lp-pkw" secondAttribute="centerX" id="z9M-KE-MtI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UfO-GW-Tsx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0L-4v-HTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1381.5999999999999" y="86.806596701649184"/>
+            <point key="canvasLocation" x="2310.7692307692305" y="86.729857819905206"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="852-O7-wBW">
             <objects>
-                <viewController id="jIJ-YF-nBB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreViewController" id="jIJ-YF-nBB" customClass="ScoreViewController" customModule="Tadak_design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bau-EC-145">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -762,6 +787,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Button_Main:" destination="jIJ-YF-nBB" eventType="touchUpInside" id="g1D-F7-eFl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -845,7 +873,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WnH-0m-cyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4832" y="87"/>
+            <point key="canvasLocation" x="5760" y="86.729857819905206"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ob1-Zu-qgz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ecw-y4-kLQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ic-Fk-utI">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QBM-0p-POh" kind="relationship" relationship="rootViewController" id="Ycx-Si-e7M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTV-dt-eXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381.5384615384614" y="86.729857819905206"/>
         </scene>
     </scenes>
     <designables>

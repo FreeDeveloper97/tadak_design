@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9337386925A177370041D54B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337386825A177370041D54B /* ResultViewController.swift */; };
+		9337386E25A177740041D54B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337386D25A177740041D54B /* ScoreViewController.swift */; };
 		9386A028259EBC49009F79AE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386A027259EBC49009F79AE /* RoundButton.swift */; };
+		93E49BCC25A16CAE00E53712 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E49BCB25A16CAE00E53712 /* StartViewController.swift */; };
+		93E49BD125A16F2D00E53712 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E49BD025A16F2D00E53712 /* SelectViewController.swift */; };
+		93E49BD525A1700500E53712 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E49BD425A1700500E53712 /* GameViewController.swift */; };
 		93E72FD6259D715800109C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E72FD5259D715800109C9E /* AppDelegate.swift */; };
 		93E72FD8259D715800109C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E72FD7259D715800109C9E /* SceneDelegate.swift */; };
-		93E72FDA259D715800109C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E72FD9259D715800109C9E /* ViewController.swift */; };
+		93E72FDA259D715800109C9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E72FD9259D715800109C9E /* MainViewController.swift */; };
 		93E72FDD259D715800109C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E72FDB259D715800109C9E /* Main.storyboard */; };
 		93E72FDF259D715900109C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E72FDE259D715900109C9E /* Assets.xcassets */; };
 		93E72FE2259D715900109C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E72FE0259D715900109C9E /* LaunchScreen.storyboard */; };
@@ -18,11 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9337386825A177370041D54B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9337386D25A177740041D54B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		9386A027259EBC49009F79AE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		93E49BCB25A16CAE00E53712 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		93E49BD025A16F2D00E53712 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		93E49BD425A1700500E53712 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		93E72FD2259D715800109C9E /* Tadak_design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tadak_design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E72FD5259D715800109C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93E72FD7259D715800109C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93E72FD9259D715800109C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93E72FD9259D715800109C9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		93E72FDC259D715800109C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93E72FDE259D715900109C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E72FE1259D715900109C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,12 +70,17 @@
 		93E72FD4259D715800109C9E /* Tadak_design */ = {
 			isa = PBXGroup;
 			children = (
+				93E72FD5259D715800109C9E /* AppDelegate.swift */,
 				93E72FDB259D715800109C9E /* Main.storyboard */,
 				9386A027259EBC49009F79AE /* RoundButton.swift */,
 				93F1228E25A0C3DD001F63A8 /* MyCustomView.swift */,
-				93E72FD5259D715800109C9E /* AppDelegate.swift */,
 				93E72FD7259D715800109C9E /* SceneDelegate.swift */,
-				93E72FD9259D715800109C9E /* ViewController.swift */,
+				93E72FD9259D715800109C9E /* MainViewController.swift */,
+				93E49BCB25A16CAE00E53712 /* StartViewController.swift */,
+				93E49BD025A16F2D00E53712 /* SelectViewController.swift */,
+				93E49BD425A1700500E53712 /* GameViewController.swift */,
+				9337386825A177370041D54B /* ResultViewController.swift */,
+				9337386D25A177740041D54B /* ScoreViewController.swift */,
 				93E72FDE259D715900109C9E /* Assets.xcassets */,
 				93E72FE0259D715900109C9E /* LaunchScreen.storyboard */,
 				93E72FE3259D715900109C9E /* Info.plist */,
@@ -143,10 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E49BD525A1700500E53712 /* GameViewController.swift in Sources */,
 				9386A028259EBC49009F79AE /* RoundButton.swift in Sources */,
-				93E72FDA259D715800109C9E /* ViewController.swift in Sources */,
+				93E72FDA259D715800109C9E /* MainViewController.swift in Sources */,
+				93E49BD125A16F2D00E53712 /* SelectViewController.swift in Sources */,
 				93F1228F25A0C3DD001F63A8 /* MyCustomView.swift in Sources */,
 				93E72FD6259D715800109C9E /* AppDelegate.swift in Sources */,
+				9337386925A177370041D54B /* ResultViewController.swift in Sources */,
+				9337386E25A177740041D54B /* ScoreViewController.swift in Sources */,
+				93E49BCC25A16CAE00E53712 /* StartViewController.swift in Sources */,
 				93E72FD8259D715800109C9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
