@@ -17,7 +17,7 @@ class SelectViewController: UIViewController {
     @IBAction func Button_SampleGame(_ sender: UIButton) {
         let vcName = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController")
         vcName?.modalPresentationStyle = .fullScreen
-        vcName?.modalTransitionStyle = .flipHorizontal
+        vcName?.modalTransitionStyle = .crossDissolve
         self.present(vcName!, animated: true, completion: nil)
     }
     

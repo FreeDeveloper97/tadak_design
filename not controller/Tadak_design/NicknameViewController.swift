@@ -7,19 +7,19 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
-    
+class NicknameViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func Button_Start(_ sender: UIButton) {
-        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "PhoneCheckViewController")
+    
+    @IBAction func Button_start(_ sender: RoundButton) {
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController")
         vcName?.modalPresentationStyle = .fullScreen
         vcName?.modalTransitionStyle = .crossDissolve
         self.present(vcName!, animated: true, completion: nil)
     }
-    
 }
 

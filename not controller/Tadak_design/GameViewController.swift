@@ -11,13 +11,14 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func Button_Result(_ sender: UIButton) {
         let vcName = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController")
         vcName?.modalPresentationStyle = .fullScreen
-        vcName?.modalTransitionStyle = .partialCurl
+        vcName?.modalTransitionStyle = .crossDissolve
         self.present(vcName!, animated: true, completion: nil)
     }
     
