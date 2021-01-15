@@ -10,6 +10,10 @@
 		9331206B25AC3A0E009E9760 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9331206A25AC3A0E009E9760 /* NicknameViewController.swift */; };
 		9337386925A177370041D54B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337386825A177370041D54B /* ResultViewController.swift */; };
 		9337386E25A177740041D54B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337386D25A177740041D54B /* ScoreViewController.swift */; };
+		9344B37E25B17FC900AFDC64 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9344B37A25B17FC900AFDC64 /* NanumSquareRoundB.ttf */; };
+		9344B37F25B17FC900AFDC64 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9344B37B25B17FC900AFDC64 /* NanumSquareRoundR.ttf */; };
+		9344B38025B17FC900AFDC64 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9344B37C25B17FC900AFDC64 /* NanumSquareRoundL.ttf */; };
+		9344B38125B17FC900AFDC64 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9344B37D25B17FC900AFDC64 /* NanumSquareRoundEB.ttf */; };
 		937C495425AC391700797DE2 /* PhoneCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C495325AC391700797DE2 /* PhoneCheckViewController.swift */; };
 		9386A028259EBC49009F79AE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386A027259EBC49009F79AE /* RoundButton.swift */; };
 		93E49BCC25A16CAE00E53712 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E49BCB25A16CAE00E53712 /* StartViewController.swift */; };
@@ -28,6 +32,10 @@
 		9331206A25AC3A0E009E9760 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		9337386825A177370041D54B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9337386D25A177740041D54B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		9344B37A25B17FC900AFDC64 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
+		9344B37B25B17FC900AFDC64 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
+		9344B37C25B17FC900AFDC64 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundL.ttf; sourceTree = "<group>"; };
+		9344B37D25B17FC900AFDC64 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
 		937C495325AC391700797DE2 /* PhoneCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCheckViewController.swift; sourceTree = "<group>"; };
 		9386A027259EBC49009F79AE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		93E49BCB25A16CAE00E53712 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9344B36F25B17F2E00AFDC64 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9344B37A25B17FC900AFDC64 /* NanumSquareRoundB.ttf */,
+				9344B37D25B17FC900AFDC64 /* NanumSquareRoundEB.ttf */,
+				9344B37C25B17FC900AFDC64 /* NanumSquareRoundL.ttf */,
+				9344B37B25B17FC900AFDC64 /* NanumSquareRoundR.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		93E72FC9259D715800109C9E = {
 			isa = PBXGroup;
 			children = (
+				9344B36F25B17F2E00AFDC64 /* fonts */,
 				93E72FD4259D715800109C9E /* Tadak_design */,
 				93E72FD3259D715800109C9E /* Products */,
 			);
@@ -152,8 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E72FE2259D715900109C9E /* LaunchScreen.storyboard in Resources */,
+				9344B38125B17FC900AFDC64 /* NanumSquareRoundEB.ttf in Resources */,
 				93E72FDF259D715900109C9E /* Assets.xcassets in Resources */,
+				9344B37F25B17FC900AFDC64 /* NanumSquareRoundR.ttf in Resources */,
 				93E72FDD259D715800109C9E /* Main.storyboard in Resources */,
+				9344B37E25B17FC900AFDC64 /* NanumSquareRoundB.ttf in Resources */,
+				9344B38025B17FC900AFDC64 /* NanumSquareRoundL.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
